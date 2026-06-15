@@ -1,0 +1,103 @@
+1.  n1 =  int(input("Enter no: "))
+    n2 =  int(input("Enter no: "))
+    print("Number 1: ",n1)
+    print("Number 2: ",n2)
+
+2.  n1 =  int(input("Enter no: "))
+    n2 =  int(input("Enter no: "))
+    if n1 > n2:
+        print("Number 1 is greater")
+    else:
+        print("Number 2 is greater")  
+
+3.  p =  float(input("Enter principle: "))
+    r =  float(input("Enter rate of interest: "))
+    t =  float(input("Enter time: "))
+    si = (p*r*t)/100.0
+    print("Simple Interest is: ",si)
+
+4.  a =  int(input("Enter a: "))
+    b =  int(input("Enter b: "))
+    c =  int(input("Enter c: "))
+    avg = float((a+b+c)/3)
+    print("Average of 3 numbers is: ",avg)
+
+5.  m1 = float(input("Enter marks in 1st subject: "))
+    m2 = float(input("Enter marks in 2nd subject: "))
+    m3 = float(input("Enter marks in 3rd subject: "))
+    m4 = float(input("Enter marks in 4th subject: "))
+    m5 = float(input("Enter marks in 5th subject: "))
+    total = m1 + m2 + m3 + m4 + m5
+    per = (total / 500) * 100
+    print("Percentage is: ",per)
+
+6.  l = float(input("Enter length of rectangle: "))
+    b = float(input("Enter breadth of rectangle: "))
+    area = l * b
+    print("Area of rectangle is: ",area)
+
+7.  a = int(input("Enter number: "))
+    if a % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")  
+
+8.  n = int(input("Enter number: "))
+    for i in range (1,n):
+        print(i)
+
+9.  n = int(input("Enter number: "))
+    for i in range (1,10+1):
+        print(f"{n} * {i} = {n * i}")
+
+10. n = int(input("enter no: "))
+    sum = n * (n + 1) // 2
+    print(f"Sum of first n natural numbers:",sum)  
+
+11. n = int(input("enter no: "))
+    factorial = 1
+    if n == 0:
+        factorial = 1
+    for i in range(1,n+1):
+        factorial = factorial * i
+    print("Factorial of ",n, "is: ", factorial)
+
+12. n = int(input("enter no: "))
+    even = 0
+    odd = 0
+    for i in range(1,n+1):
+        if i % 2 == 0:
+            even = even + 1
+        else:
+            odd = odd + 1
+    print("Even numbers between 1 and ",n , "is: ",even)
+    print("Odd numbers between 1 and ",n , "is: ",odd)
+
+13. n = int(input("enter no: "))
+    if n % 2 == 0:
+        print("Prime")
+    else:
+        print("Not a prime")
+
+14. a = int(input("enter no: "))
+    b = int(input("enter no: "))
+    c = int(input("enter no: "))
+    if a > b and a > c:
+        print("a is greatest")
+    elif b > a and b > c:
+        print("b is greatest")
+    else:
+        print("c is greatest")
+
+15. n = int(input("enter no: "))
+    if n > 0:
+        print("Positve number")
+    elif n < 0:
+        print("Negative number")
+    else:
+        print("Number is zero")
+
+16. n = float(input("enter in kilometer: "))
+    meter = float(n * 1000)
+    centimeter = float(n * 100000)
+    print("In meter: ",meter,"And in centimeter: ",centimeter)
